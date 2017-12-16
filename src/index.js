@@ -7,6 +7,7 @@ import ReactDOM from 'react-dom';
 import sum from './sum';
 //import './image_view';
 import Comment from './study1';
+import App from './App';
 
 
 const total = sum(10,5);
@@ -38,10 +39,12 @@ const comment = {
 
 ReactDOM.render(
     <div>
+        <App/>
         <h1>this is my sds test sdssdsdqqqq</h1>
         <Button/>
         <Comment date={comment.date} text={comment.text} author={comment.author}/>
         <br/>
+
     </div>,
     document.getElementById('root')
 )
