@@ -27,7 +27,7 @@ function todos(state = [], action) {    //对应state.todos
     }
 }
 
-function visibilityFilter(state = SHOW_ALL,action) {
+function visibilityFilter(state = 'SHOW_ALL',action) {
     switch (action.type){
         case SET_VISIBILITY_FILTER:
             return action.filter

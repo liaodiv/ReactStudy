@@ -3,11 +3,15 @@
  */
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import { Provider } from 'react-redux';
+import { createStore } from 'redux'
+import todoApp from './reduces/reducer'
 import sum from './sum';
 //import './image_view';
 import Comment from './study1';
 import App from './App';
+
+//import './storeindex';
 
 
 const total = sum(10,5);
@@ -36,16 +40,15 @@ const comment = {
             'http://placekitten.com/g/64/64',
     },
 }
+let store = createStore(todoApp,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
+
 
 ReactDOM.render(
-    <div>
+    <Provider store={store}>
         <App/>
-        <h1>this is my sds test sdssdsdqqqq</h1>
-        <Button/>
-        <Comment date={comment.date} text={comment.text} author={comment.author}/>
-        <br/>
-
-    </div>,
+    </Provider>,
     document.getElementById('root')
 )
 

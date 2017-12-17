@@ -11,6 +11,7 @@ import List from './component/List';
 import Temperature from './component/BoilingVerdict';
 import Counter from './component/Counter';
 import Context from './component/Context';
+import TodoApp from './component/AddTodo';
 
 const Home = () => (
     <div>
@@ -29,7 +30,6 @@ const Topic = ({ match }) => (
         <h3>{match.params.topicId}</h3>
     </div>
 )
-
 const Topics = ({ match }) => (
     <div>
         <h2>Topics</h2>
@@ -68,10 +68,10 @@ const BasicExample = () => (
                 <li><Link to="/clock">Clock</Link></li>
                 <li><Link to="/toggle">Toggle</Link></li>
                 <li><Link to="/list">List</Link></li>
-                <li><Link to="/temper">Temper></Link></li>
-                <li><Link to="/counter">Counter></Link></li>
-
-                <li><Link to="/context">Context></Link></li>
+                <li><Link to="/temper">Temper</Link></li>
+                <li><Link to="/counter">Counter</Link></li>
+                <li><Link to="/context">Context</Link></li>
+                <li><Link to="/todo">todolist</Link></li>
             </ul>
 
             <hr/>
@@ -85,6 +85,7 @@ const BasicExample = () => (
             <Route path="/temper" component={Temperature}/>
             <Route path="/counter" component={Counter}/>
             <Route path="/context" component={Context}/>
+            <Route path="/todo" component={TodoApp}/>
         </div>
     </Router>
 )
