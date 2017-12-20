@@ -8,7 +8,6 @@ const TodoList = ({ todos, onTodoClick }) => {
     console.log('todolist');
     return (
         <ul>
-            {todos.length == 0}?<li>无数据</li>:''
             {todos.map((todo, index) => {
                 return (
                     <Todo

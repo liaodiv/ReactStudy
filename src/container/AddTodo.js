@@ -16,10 +16,11 @@ const AddTodo = ({dispatch}) => {
             dispatch(addTodo(input.value));
             input.value = '';
         }}>
-            <label>输入todo112</label>
+            <label>输入todo</label>
             <input ref={node => {
                 input = node
             }}/>
+
             <button type="submit">
                 Add Todo
             </button>

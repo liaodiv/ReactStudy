@@ -2,8 +2,9 @@
  * Created by liao on 2017/12/17.
  */
 import React from 'react'
-import AddTodo from './AddTodo'
-import List from '../container/VisibleTodoList'
+import AddTodo from '../container/AddTodo'
+import List from '../container/Visible'
+import Footer from '../container/Footer'
 
 //根节点
 const App = ( ) => {
@@ -11,6 +12,9 @@ const App = ( ) => {
         <div>
             <AddTodo/>
             <List/>
+            <Footer/>
         </div>
     )
 }
+
+export default App

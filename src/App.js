@@ -11,7 +11,7 @@ import List from './component/List';
 import Temperature from './component/BoilingVerdict';
 import Counter from './component/Counter';
 import Context from './component/Context';
-import TodoApp from './component/AddTodo';
+import TodoApp from './component/TodoApp';
 
 const Home = () => (
     <div>

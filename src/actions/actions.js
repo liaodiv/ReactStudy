@@ -21,9 +21,8 @@ export function toggleTodo(index) {
 export function filter(filter) {
     return {
         type:SET_VISIBILITY_FILTER,
-        payload:{
             filter:filter
-        }
+
     }
     
 }
